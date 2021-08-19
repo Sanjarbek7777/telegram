@@ -8,12 +8,176 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="bg-dark">
+
+  <main class="main py-4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="main__left col-3  bg-white" style="height: 700px;">
+          <div class="d-flex align-items-center justify-content-between" style="height: 50px;">
+            <button class="js-open-left-modal btn p-0" type="button" data-toggle="modal" data-target="#leftModal">
+              <img src="./img/menu.svg" alt="button menu" width="20" height="20">
+            </button>
+            <form class="flex-grow-1 mx-4" action="https://echo.htmlacademy.ru">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="Search">
+            </form>
+            <button class="btn p-0" type="button" data-toggle="modal" data-target="#exampleModal">
+              <img src="./img/lock-open.svg" alt="lock" width="25" height="25">
+            </button>
+          </div>
+          <div class="vh-100 overflow-auto">
+            <ul class="list-group">
+              <li class="w-100 list-group-item d-flex justify-content-between align-items-center flex-grow-1 border-0">
+                <div class="row flex-grow-1">
+                  <div class="wrapper ml-5">
+                    <div class="wrapper__saved">
+                      <h5 class="m-0 mb-1 pl-4">Saved Messages</h5>
+                      <p class="chat__content text-truncate text-secondary m-0 pl-4 "><span class="text-primary">You:</span> Hello, World!</p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column ml-auto">
+                    <time class="mb-1 " datetime="2020-04-07">09:35</time>
+                    <span class="badge badge-secondary badge-pill"></span>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 list-group-item d-flex justify-content-between align-items-center flex-grow-1 border-0">
+                <div class="row flex-grow-1">
+                  <div class="wrapper ml-5">
+                    <div class="wrapper__mayoq">
+                      <h5 class="wrapper__heading m-0 mb-1 pl-4">Mayoq</h5>
+                      <p class="chat__content text-truncate text-secondary m-0 pl-4"><span class="text-primary">Photo:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nam? Cumque tenetur vel eius modi vero ratione quis cum minus.</p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column ml-auto">
+                    <time class="mb-1" datetime="2020-04-07">11:34</time>
+                    <span class="badge badge-secondary badge-pill">12</span>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 list-group-item d-flex justify-content-between align-items-center flex-grow-1 border-0">
+                <div class="row flex-grow-1">
+                  <div class="wrapper ml-5">
+                    <div class="wrapper__bot">
+                      <h5 class="wrapper__bot-heading m-0 mb-1 pl-3">Mayoq Contact Bot</h5>
+                      <p class="chat__content text-truncate text-secondary m-0 pl-4"><span class="text-primary">GiF</span></p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column ml-auto">
+                    <time class="mb-1" datetime="2020-04-07">12:04</time>
+                    <span class="badge badge-secondary badge-pill">7</span>
+                  </div>
+                </div>
+              </li>
+              <li class="w-100 list-group-item d-flex justify-content-between align-items-center flex-grow-1 border-0">
+                <div class="row flex-grow-1">
+                  <div class="wrapper ml-5">
+                    <div class="wrapper__chat">
+                      <h5 class="wrapper__chat-heading m-0 mb-1 pl-3">Mayoq Asosiy Chat</h5>
+                      <p class="chat__content text-truncate text-secondary m-0 pl-4"><span class="text-primary">Video:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, deleniti.</p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column ml-auto">
+                    <time class="mb-1" datetime="2020-04-07">12:25</time>
+                    <span class="badge badge-secondary badge-pill">75</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="main__content col-6 w-100 bg-secondary" style="height: 700px;"></div>
+        <div class="main__right col-3 bg-secondary" style="height: 700px;"></div>
+      </div>
+    </div>
+  </main>
 
 
+  <!-- Modal -->
+  <div class="modal-password modal fade bg-white" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog m-0">
+      <div class="modal-password__body modal-content border-0">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="exampleModalLabel">Enter yout local password</h5>
+        </div>
+        <div class="modal-body">
+          <form action="https://echo.htmlacademy.ru" style="width: 230px;">
+            <input class="form-control border-primary" type="password" placeholder="Your password">
+          </form>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary ml-4" data-dismiss="modal">Log out</button>
+          <button type="button" class="btn btn-primary mr-auto">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Modal left -->
+  <div class="modal fade p-0" id="leftModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog m-0  rounded-0">
+      <div class="modal-content rounded-0">
+        <div class="modal-body p-0 vh-100 overflow-hidden">
+          <div class="p-4 bg-primary">
+            <div class="d-flex justify-content-between w-100 mb-4">
+              <img class="rounded-pill " src="./img/frontent-group.png" alt="user" width="60" height="60">
+              <a class="saved-massage rounded-pill" href="#seved-massage"></a>
+            </div>
+            <div class="">
+              <a class="btn d-flex align-items-center justify-content-between text-white p-0" data-toggle="collapse" href="#new-account" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <div class="d-flex flex-column align-items-start">
+                  <p class="mb-0 font-weight-bold">Frontend Pro#1</p>
+                  <span>+998997610011</span>
+                </div>
+                <img src="./img/arrow-down.svg" alt="arrow" width="40" height="30">
+              </a>
+            </div>
+          </div>
+          <div class="vh-100 overflow-auto">
+            <div class="collapse" id="new-account">
+              <div class="card card-body border-0 border-bottom p-4">
+                <a class="nav-xxl nav-link active rounded-0 w-100 p-0 mb-3" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                  <div class="media align-items-center">
+                    <div class="position-relative">
+                      <img src="./img/frontent-group.png" class="rounded-pill mr-3" alt="mayoq hub" width="50" height="50">
+                      <span class="p-2 rounded-pill bg-info position-absolute" style="bottom: 0; right: 18px;"></span>
+                    </div>
+                    <div class="media-body d-flex align-items-center justify-content-between">
+                      <h5 class="text-dark mb-0">Frontend</h5>
+                      <span class="rounded-pill p-1 h6 bg-secondary text-white mb-0">+99</span>
+                    </div>
+                  </div>
+                </a>
+                <a class="nav-xxl nav-link active rounded-0 w-100 p-0" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                  <div class="media align-items-center">
+                    <div class="">
+                      <img src="./img/smiling-emoticon-square-face.svg" class="rounded-pill mr-3" alt="mayoq hub" width="50" height="50">
+                    </div>
+                    <div class="media-body d-flex align-items-center justify-content-between">
+                      <h5 class="text-dark mb-0">Add Account</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="p-4">
+              <a class="d-flex align-items-center text-decoration-none mb-3" href="#">
+                <img class="mr-3" src="./img/people-chat.svg" alt="new group" width="40" height="40">
+                <h5 class="mb-0 text-dark">New Group</h5>
+              </a>
+              <a class="d-flex align-items-center text-decoration-none mb-3" href="#">
+                <img class="mr-3" src="./img/campaign.svg" alt="new group" width="40" height="40">
+                <h5 class="mb-0 text-dark">New Channel</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

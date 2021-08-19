@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.wrapper{
+  position: relative;
+}
+
+.wrapper__saved::before {
+  position: absolute;
+  z-index: 1;
+  left: -52px;
+  top: -1px;
+  content: "";
+  display: block;
+  background-color: rgb(159, 181, 247);
+  background-image: url(../img/bookmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.wrapper__mayoq::before {
+  position: absolute;
+  left: -52px;
+  top: -1px;
+  z-index: 1;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/mayoq.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.wrapper__heading{
+  display: flex;
+  align-items: center;
+}
+
+.wrapper__heading::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/campaign.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.wrapper__bot::before {
+  position: absolute;
+  left: -52px;
+  top: -1px;
+  z-index: 1;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/mayoq-bot.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.wrapper__bot-heading{
+  display: flex;
+  align-items: center;
+}
+
+.wrapper__bot-heading::before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-image: url(../img/smart-toy.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.wrapper__chat::before {
+  position: absolute;
+  left: -52px;
+  top: -1px;
+  z-index: 1;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/mayoq-chat.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.wrapper__chat-heading{
+  display: flex;
+  align-items: center;
+}
+
+.wrapper__chat-heading::before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-image: url(../img/people-chat.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.chat__content{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 250px;
+  margin-bottom: 0;
+}
+
+.modal-password__body {
+  margin-left: 600px;
+  margin-top: 150px;
+}
