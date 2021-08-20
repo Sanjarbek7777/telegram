@@ -140,3 +140,63 @@ html {
   margin-left: 600px;
   margin-top: 150px;
 }
+
+.form-textarea {
+  max-height: 40px;
+  min-height: 40px;
+}
+
+.messages-wrapper {
+  background-image: url(../img/messages-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.input-file {
+  visibility: hidden;
+}
+
+.input-span {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/attachment-clip.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* .submit-btn{
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/microphone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+input:not(:placeholder-shown):not(:focus) .submit-btn{
+  background-image: url(../img/bookmark.svg);
+} */
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #adadad;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #adadad;
+}
