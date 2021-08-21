@@ -153,13 +153,10 @@ html {
   background-size: cover;
 }
 
-.input-file {
-  visibility: hidden;
-}
-
 .input-span {
-  width: 40px;
-  height: 40px;
+  display: block  ;
+  width: 20px;
+  height: 20px;
   background-image: url(../img/attachment-clip.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -199,4 +196,46 @@ input:not(:placeholder-shown):not(:focus) .submit-btn{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #adadad;
+}
+
+/* @keyframes leftmodal {
+  from {left: -200px;}
+  to {left: 0px;}
+}
+
+.modal-left {
+  animation-name: leftmodal;
+  animation-duration: 0.5s;
+} */
+
+.modal.fade .modal-left {
+  transform: translateX(-1000px)
+}
+
+.modal.fade.show .modal-left {
+  transform: translateX(0);
+}
+
+.item {
+  position: relative;
+}
+
+.item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  bottom: -8px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.item:active::after {
+  background-color: steelblue;
+}
+
+.list-icons {
+  background-color: #f1f0f0;
 }

@@ -26,8 +26,8 @@
             </button>
           </div>
           <div class="overflow-auto" style="height: 620px;">
-            <ul class="list-group">
-              <li class="w-100 list-group-item d-flex justify-content-between align-items-center flex-grow-1 border-0">
+            <ul class="list-group nav nav-tabs" id="myTab" role="tablist">
+              <li class="w-100 list-group-item d-flex justify-content-between align-items-center flex-grow-1 border-0 nav-item" role="presentation">
                 <div class="row flex-grow-1">
                   <div class="wrapper ml-5">
                     <div class="wrapper__saved">
@@ -217,7 +217,7 @@
               <img src="./img/chat-black-voice.svg" alt="voice chat" width="25" height="25">
             </button>
 
-            <button class="btn" type="button" data-toggle="modal" data-target="#groupInfoModal">
+            <button class="btn" type="button">
               <img src="./img/icon-sizer.svg" alt="group info" width="20" height="20">
             </button>
 
@@ -343,11 +343,10 @@
 
           <div class="bg-white py-1">
             <form class="d-flex align-items-center w-100" action="https://echo.htmlacademy.ru" method="POST">
-              <div style="width: 0;">
-                <input class="input-file form-control" type="file">
-                <span class="input-span">
-                </span>
-              </div>
+              <label class="mx-3 mt-1">
+                <input class="input-file form-control sr-only" type="file">
+                <span class="input-span"></span>
+              </label>
               <textarea class="form-textarea form-control border-0 w-100" name="send message" cols="30" rows="1" placeholder="Write a message"></textarea>
               <button class="btn" type="button">
                 <img src="./img/smiling-emoticon-square-face.svg" alt="emojies" width="20" height="20">
@@ -358,7 +357,419 @@
             </form>
           </div>
         </div>
-        <div class="main__right col-3 bg-secondary" style="height: 700px;"></div>
+        <div class="main__right col-3 bg-secondary p-0 border-left bg-white" style="height: 700px;">
+          <ul class="nav nav-tabs bg-white justify-content-between px-4 py-2 border-bottom" id="myTab" role="tablist">
+            <li class="nav-item item" role="presentation">
+              <a class="nav-link active text-black-50 border-0" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">EMOJI</a>
+            </li>
+            <li class="nav-item item" role="presentation">
+              <a class="nav-link text-black-50 border-0" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">STICKERS</a>
+            </li>
+            <li class="nav-item item" role="presentation">
+              <a class="nav-link text-black-50 border-0" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">GIFS</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="bg-white p-0 overflow-auto" style="height: 600px;">
+                <ul class="list-unstyled bg-white pl-2">
+                  <li>
+                    <p class="m-0 font-weight-bold text-black-50 pl-3 mb-3 mt-1">People</p>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">😁</button>
+                    <button class="btn" type="button">😁</button>
+                    <button class="btn" type="button">😁</button>
+                    <button class="btn" type="button">😁</button>
+                    <button class="btn" type="button">😁</button>
+                    <button class="btn pr-0 pr-2" type="button">😁</button>
+                    <button class="btn" type="button">😁</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">😂</button>
+                    <button class="btn" type="button">😂</button>
+                    <button class="btn" type="button">😂</button>
+                    <button class="btn" type="button">😂</button>
+                    <button class="btn" type="button">😂</button>
+                    <button class="btn pr-0 pr-2" type="button">😂</button>
+                    <button class="btn" type="button">😂</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">😝</button>
+                    <button class="btn" type="button">😝</button>
+                    <button class="btn" type="button">😝</button>
+                    <button class="btn" type="button">😝</button>
+                    <button class="btn" type="button">😝</button>
+                    <button class="btn pr-0 pr-2" type="button">😝</button>
+                    <button class="btn" type="button">😝</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">😉</button>
+                    <button class="btn" type="button">😉</button>
+                    <button class="btn" type="button">😉</button>
+                    <button class="btn" type="button">😉</button>
+                    <button class="btn" type="button">😉</button>
+                    <button class="btn pr-0 pr-2" type="button">😉</button>
+                    <button class="btn" type="button">😉</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🤪</button>
+                    <button class="btn" type="button">🤪</button>
+                    <button class="btn" type="button">🤪</button>
+                    <button class="btn" type="button">🤪</button>
+                    <button class="btn" type="button">🤪</button>
+                    <button class="btn pr-0 pr-2" type="button">🤪</button>
+                    <button class="btn" type="button">🤪</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🥺</button>
+                    <button class="btn" type="button">🥺</button>
+                    <button class="btn" type="button">🥺</button>
+                    <button class="btn" type="button">🥺</button>
+                    <button class="btn" type="button">🥺</button>
+                    <button class="btn pr-0 pr-2" type="button">🥺</button>
+                    <button class="btn" type="button">🥺</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">😆</button>
+                    <button class="btn" type="button">😆</button>
+                    <button class="btn" type="button">😆</button>
+                    <button class="btn" type="button">😆</button>
+                    <button class="btn" type="button">😆</button>
+                    <button class="btn pr-0 pr-2" type="button">😆</button>
+                    <button class="btn" type="button">😆</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">😅</button>
+                    <button class="btn" type="button">😅</button>
+                    <button class="btn" type="button">😅</button>
+                    <button class="btn" type="button">😅</button>
+                    <button class="btn" type="button">😅</button>
+                    <button class="btn pr-0 pr-2" type="button">😅</button>
+                    <button class="btn" type="button">😅</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🤣</button>
+                    <button class="btn" type="button">🤣</button>
+                    <button class="btn" type="button">🤣</button>
+                    <button class="btn" type="button">🤣</button>
+                    <button class="btn" type="button">🤣</button>
+                    <button class="btn pr-0 pr-2" type="button">🤣</button>
+                    <button class="btn" type="button">🤣</button>
+                  </li>
+                </ul>
+
+
+                <ul class="list-unstyled bg-white pl-2">
+                  <li>
+                    <p class="m-0 font-weight-bold text-black-50 pl-3 mb-3 mt-1">Nature</p>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🐶</button>
+                    <button class="btn" type="button">🐶</button>
+                    <button class="btn" type="button">🐶</button>
+                    <button class="btn" type="button">🐶</button>
+                    <button class="btn" type="button">🐶</button>
+                    <button class="btn pr-0 pr-2" type="button">🐶</button>
+                    <button class="btn" type="button">🐶</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn pr-0 pr-2" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn pr-0 pr-2" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🐥</button>
+                    <button class="btn" type="button">🐥</button>
+                    <button class="btn" type="button">🐥</button>
+                    <button class="btn" type="button">🐥</button>
+                    <button class="btn" type="button">🐥</button>
+                    <button class="btn pr-0 pr-2" type="button">🐥</button>
+                    <button class="btn" type="button">🐥</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🐻</button>
+                    <button class="btn" type="button">🐻</button>
+                    <button class="btn" type="button">🐻</button>
+                    <button class="btn" type="button">🐻</button>
+                    <button class="btn" type="button">🐻</button>
+                    <button class="btn pr-0 pr-2" type="button">🐻</button>
+                    <button class="btn" type="button">🐻</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🐼</button>
+                    <button class="btn" type="button">🐼</button>
+                    <button class="btn" type="button">🐼</button>
+                    <button class="btn" type="button">🐼</button>
+                    <button class="btn" type="button">🐼</button>
+                    <button class="btn pr-0 pr-2" type="button">🐼</button>
+                    <button class="btn" type="button">🐼</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🐯</button>
+                    <button class="btn" type="button">🐯</button>
+                    <button class="btn" type="button">🐯</button>
+                    <button class="btn" type="button">🐯</button>
+                    <button class="btn" type="button">🐯</button>
+                    <button class="btn pr-0 pr-2" type="button">🐯</button>
+                    <button class="btn" type="button">🐯</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn pr-0 pr-2" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn pr-0 pr-2" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="bg-white overflow-auto" style="height: 600px">
+                <ul class="list-unstyled bg-white pl-2">
+                  <li>
+                    <p class="m-0 font-weight-bold text-black-50 pl-3 mb-3 mt-1">Nature</p>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🐶</button>
+                    <button class="btn" type="button">🐶</button>
+                    <button class="btn" type="button">🐶</button>
+                    <button class="btn" type="button">🐶</button>
+                    <button class="btn" type="button">🐶</button>
+                    <button class="btn pr-0 pr-2" type="button">🐶</button>
+                    <button class="btn" type="button">🐶</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn pr-0 pr-2" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                    <button class="btn pr-0 pr-2" type="button">🐱</button>
+                    <button class="btn" type="button">🐱</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🐥</button>
+                    <button class="btn" type="button">🐥</button>
+                    <button class="btn" type="button">🐥</button>
+                    <button class="btn" type="button">🐥</button>
+                    <button class="btn" type="button">🐥</button>
+                    <button class="btn pr-0 pr-2" type="button">🐥</button>
+                    <button class="btn" type="button">🐥</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🐻</button>
+                    <button class="btn" type="button">🐻</button>
+                    <button class="btn" type="button">🐻</button>
+                    <button class="btn" type="button">🐻</button>
+                    <button class="btn" type="button">🐻</button>
+                    <button class="btn pr-0 pr-2" type="button">🐻</button>
+                    <button class="btn" type="button">🐻</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🐼</button>
+                    <button class="btn" type="button">🐼</button>
+                    <button class="btn" type="button">🐼</button>
+                    <button class="btn" type="button">🐼</button>
+                    <button class="btn" type="button">🐼</button>
+                    <button class="btn pr-0 pr-2" type="button">🐼</button>
+                    <button class="btn" type="button">🐼</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🐯</button>
+                    <button class="btn" type="button">🐯</button>
+                    <button class="btn" type="button">🐯</button>
+                    <button class="btn" type="button">🐯</button>
+                    <button class="btn" type="button">🐯</button>
+                    <button class="btn pr-0 pr-2" type="button">🐯</button>
+                    <button class="btn" type="button">🐯</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn pr-0 pr-2" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                    <button class="btn pr-0 pr-2" type="button">🦁</button>
+                    <button class="btn" type="button">🦁</button>
+                  </li>
+                </ul>
+
+                <ul class="list-unstyled bg-white pl-2">
+                  <li>
+                    <p class="m-0 font-weight-bold text-black-50 pl-3 mb-3 mt-1">People</p>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">😁</button>
+                    <button class="btn" type="button">😁</button>
+                    <button class="btn" type="button">😁</button>
+                    <button class="btn" type="button">😁</button>
+                    <button class="btn" type="button">😁</button>
+                    <button class="btn pr-0 pr-2" type="button">😁</button>
+                    <button class="btn" type="button">😁</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">😂</button>
+                    <button class="btn" type="button">😂</button>
+                    <button class="btn" type="button">😂</button>
+                    <button class="btn" type="button">😂</button>
+                    <button class="btn" type="button">😂</button>
+                    <button class="btn pr-0 pr-2" type="button">😂</button>
+                    <button class="btn" type="button">😂</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">😝</button>
+                    <button class="btn" type="button">😝</button>
+                    <button class="btn" type="button">😝</button>
+                    <button class="btn" type="button">😝</button>
+                    <button class="btn" type="button">😝</button>
+                    <button class="btn pr-0 pr-2" type="button">😝</button>
+                    <button class="btn" type="button">😝</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">😉</button>
+                    <button class="btn" type="button">😉</button>
+                    <button class="btn" type="button">😉</button>
+                    <button class="btn" type="button">😉</button>
+                    <button class="btn" type="button">😉</button>
+                    <button class="btn pr-0 pr-2" type="button">😉</button>
+                    <button class="btn" type="button">😉</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🤪</button>
+                    <button class="btn" type="button">🤪</button>
+                    <button class="btn" type="button">🤪</button>
+                    <button class="btn" type="button">🤪</button>
+                    <button class="btn" type="button">🤪</button>
+                    <button class="btn pr-0 pr-2" type="button">🤪</button>
+                    <button class="btn" type="button">🤪</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🥺</button>
+                    <button class="btn" type="button">🥺</button>
+                    <button class="btn" type="button">🥺</button>
+                    <button class="btn" type="button">🥺</button>
+                    <button class="btn" type="button">🥺</button>
+                    <button class="btn pr-0 pr-2" type="button">🥺</button>
+                    <button class="btn" type="button">🥺</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">😆</button>
+                    <button class="btn" type="button">😆</button>
+                    <button class="btn" type="button">😆</button>
+                    <button class="btn" type="button">😆</button>
+                    <button class="btn" type="button">😆</button>
+                    <button class="btn pr-0 pr-2" type="button">😆</button>
+                    <button class="btn" type="button">😆</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">😅</button>
+                    <button class="btn" type="button">😅</button>
+                    <button class="btn" type="button">😅</button>
+                    <button class="btn" type="button">😅</button>
+                    <button class="btn" type="button">😅</button>
+                    <button class="btn pr-0 pr-2" type="button">😅</button>
+                    <button class="btn" type="button">😅</button>
+                  </li>
+                  <li>
+                    <button class="btn" type="button">🤣</button>
+                    <button class="btn" type="button">🤣</button>
+                    <button class="btn" type="button">🤣</button>
+                    <button class="btn" type="button">🤣</button>
+                    <button class="btn" type="button">🤣</button>
+                    <button class="btn pr-0 pr-2" type="button">🤣</button>
+                    <button class="btn" type="button">🤣</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <div class="bg-white overflow-auto" style="height: 600px;">
+
+              </div>
+            </div>
+          </div>
+
+          <ul class="list-icons list-unstyled m-0 py-2 px-3 d-flex align-items-center justify-content-between">
+            <li>
+              <a class="text-decoration-none" href="#">
+                <img src="./img/icon-time.svg" alt="time icon" width="25" height="25">
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="#">
+                <img src="./img/smiling-emoticon-square-face.svg" alt="time icon" width="22" height="22">
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="#">
+                <img src="./img/icon-apple.svg" alt="time icon" width="25" height="25">
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="#">
+                <img src="./img/icon-ball.svg" alt="time icon" width="25" height="25">
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="#">
+                <img src="./img/icon-car.svg" alt="time icon" width="25" height="25">
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="#">
+                <img src="./img/icon-lamp.svg" alt="time icon" width="25" height="25">
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="#">
+                <img src="./img/icon-heart.svg" alt="time icon" width="25" height="25">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </main>
@@ -377,41 +788,6 @@
       <div class="modal-body">
         <p class="m-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde non reiciendis velit placeat eveniet. Eum.</p>
         <div>
-          <div class="d-flex align-items-center mt-3">
-            <img class="rounded-pill mr-3" src="./img/frontent-group.png" alt="profile avatar" width="50" height="50">
-            <div>
-              <p class="m-0 font-weight-bold">Muhammadjavohir Sur'atov</p>
-              <p class="m-0 font-weight-normal text-black-50">personal account</p>
-            </div>
-          </div>
-          <div class="d-flex align-items-center mt-3">
-            <img class="rounded-pill mr-3" src="./img/frontent-group.png" alt="profile avatar" width="50" height="50">
-            <div>
-              <p class="m-0 font-weight-bold">Mayoq</p>
-              <p class="m-0 font-weight-normal text-black-50">1 400 688 subscribers</p>
-            </div>
-          </div>
-          <div class="d-flex align-items-center mt-3">
-            <img class="rounded-pill mr-3" src="./img/frontent-group.png" alt="profile avatar" width="50" height="50">
-            <div>
-              <p class="m-0 font-weight-bold">MayoqHub (rezerv)</p>
-              <p class="m-0 font-weight-normal text-black-50">1 subscriber</p>
-            </div>
-          </div>
-          <div class="d-flex align-items-center mt-3">
-            <img class="rounded-pill mr-3" src="./img/frontent-group.png" alt="profile avatar" width="50" height="50">
-            <div>
-              <p class="m-0 font-weight-bold">MayoqHub</p>
-              <p class="m-0 font-weight-normal text-black-50">1 subscriber</p>
-            </div>
-          </div>
-          <div class="d-flex align-items-center mt-3">
-            <img class="rounded-pill mr-3" src="./img/frontent-group.png" alt="profile avatar" width="50" height="50">
-            <div>
-              <p class="m-0 font-weight-bold">Mayoqdagi fikrlar</p>
-              <p class="m-0 font-weight-normal text-black-50">8 subscribers</p>
-            </div>
-          </div>
           <div class="d-flex align-items-center mt-3">
             <img class="rounded-pill mr-3" src="./img/frontent-group.png" alt="profile avatar" width="50" height="50">
             <div>
@@ -539,28 +915,28 @@
           <div class="d-flex flex-column mt-4">
             <div class="d-flex align-items-center mb-3">
               <img class="rounded-pill" src="./img/frontent-group.png" alt="avatar" width="50" height="50">
-              <a class="text-decoration-none text-dark ml-5" href="#">
+              <a class="text-decoration-none text-dark ml-4" href="#">
                 <p class="m-0 font-weight-bold">Muhammadjavohir Su'ratov</p>
                 <span class="text-black-50">last seen recently</span>
               </a>
             </div>
             <div class="d-flex align-items-center mb-3">
               <img class="rounded-pill" src="./img/frontent-group.png" alt="avatar" width="50" height="50">
-              <a class="text-decoration-none text-dark ml-5" href="#">
+              <a class="text-decoration-none text-dark ml-4" href="#">
                 <p class="m-0 font-weight-bold">Rasulov Sanjarbek</p>
                 <span class="text-success">online</span>
               </a>
             </div>
             <div class="d-flex align-items-center mb-3">
               <img class="rounded-pill" src="./img/frontent-group.png" alt="avatar" width="50" height="50">
-              <a class="text-decoration-none text-dark ml-5" href="#">
+              <a class="text-decoration-none text-dark ml-4" href="#">
                 <p class="m-0 font-weight-bold">Abdulloh Rafiqov</p>
                 <span class="text-black-50">last seen just now</span>
               </a>
             </div>
             <div class="d-flex align-items-center mb-3">
               <img class="rounded-pill" src="./img/frontent-group.png" alt="avatar" width="50" height="50">
-              <a class="text-decoration-none text-dark ml-5" href="#">
+              <a class="text-decoration-none text-dark ml-4" href="#">
                 <p class="m-0 font-weight-bold">Abdulaziz Kalandarov</p>
                 <span class="text-success">online</span>
               </a>
@@ -572,8 +948,8 @@
   </div>
 </div>
 
-  <!-- Modal -->
-  <div class="modal-password modal fade bg-white" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- Modal password-->
+  <div class="modal-password modal fade bg-white" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog m-0">
       <div class="modal-password__body modal-content border-0">
         <div class="modal-header border-0">
@@ -595,9 +971,9 @@
 
   <!-- Modal left -->
   <div class="modal fade p-0" id="leftModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog m-0  rounded-0">
+    <div class="modal-left modal-dialog m-0  rounded-0">
       <div class="modal-content rounded-0">
-        <div class="modal-body p-0 vh-100 overflow-hidden">
+        <div class="modal-left modal-body p-0 vh-100 overflow-hidden">
           <div class="p-4 bg-primary">
             <div class="d-flex justify-content-between w-100 mb-4">
               <img class="rounded-pill " src="./img/frontent-group.png" alt="user" width="60" height="60">
@@ -675,6 +1051,7 @@
       </div>
     </div>
   </div>
+
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
